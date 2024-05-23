@@ -20,7 +20,7 @@ export const capitalizeWords = (str) => {
 //Function to capitalize all of the words except:
 // the, in, a, an, and, but, for, at, by, from 
 // unless one of these words is the first word of the string!
-const capitalizeHeadline = (str) => {
+export const capitalizeHeadline = (str) => {
   const words = str.split(' ');
   const capitalizedWords = words.map((word, index) => {
     if (index === 0 || !['the', 'in', 'a', 'an', 'and', 'but', 'for', 'at', 'by', 'from'].includes(word)) {
@@ -35,7 +35,7 @@ const capitalizeHeadline = (str) => {
 // Function to remove all spaces from the beginning and end of a string 
 // along with any extra spaces in the middle. If more than one space appears 
 // in the middle of a string it is replaced by a single space.
-const removeExtraSpaces = (str) => {
+export const removeExtraSpaces = (str) => {
   const trimStr = str.trim();
   const words = trimStr.split(' ');
   const filteredWords = words.filter(word => word !== '');
@@ -44,7 +44,7 @@ const removeExtraSpaces = (str) => {
 
 // Function to remove extra spaces and replaces spaces with the hyphen "-",
 // and make all characters lowercase. Also removes special characters from the string.
-const kebabCase = (str) => {
+export const kebabCase = (str) => {
   const trimStr = str.trim();
   const chars = trimStr.split('');
   const filter = chars.filter(char => {
@@ -60,7 +60,7 @@ const kebabCase = (str) => {
 
 // Function to remove extra space and replaces spaces with an underscore "_", 
 // and make all characters lowercase.
-const snakeCase = (str) => {
+export const snakeCase = (str) => {
   const trimStr = str.trim();
   const chars = trimStr.split('');
   const filter = chars.filter(char => {
@@ -77,7 +77,7 @@ const snakeCase = (str) => {
 // Function to lowercase the first character of the first word. 
 // Then uppercase the first character of all other words, 
 // and removes all spaces.
-const camelCase = (str) => {
+export const camelCase = (str) => {
   const trimStr = str.trim();
   const words = trimStr.split(' ');
   const camelWords = words.map((word, index) => {
@@ -91,7 +91,7 @@ const camelCase = (str) => {
 }
 
 // Function to take the first character of a string and move to the end of a string.
-const shift = (str, num = 1) => {
+export const shift = (str, num = 1) => {
   const shiftedStr = str.slice(num) + str.slice(0, num);
   return shiftedStr;
 }
@@ -101,7 +101,7 @@ const shift = (str, num = 1) => {
 // Each word in the phrase begins with an uppercase letter.
 // If the given string has more than three words pick the three longest 
 // and make the hash tag from those.
-const makeHashTag = (str) => {
+export const makeHashTag = (str) => {
   const words = str.split(' ');
   const sortedWords = words.sort((a, b) => b.length - a.length);
   const hashTagWords = sortedWords.slice(0, 3).map(word => capitalize(word));
@@ -111,6 +111,6 @@ const makeHashTag = (str) => {
 // Function to return true if the given string is empty or contains only whitespace. 
 // White space includes: spaces, line returns, and tabs. 
 // These characters can be represented with: \n (new line) \r (carrige return), \t (tab).
-const isEmpty = (str) => {
+export const isEmpty = (str) => {
   return str.trim() === '';
 }
