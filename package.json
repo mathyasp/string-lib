@@ -1,6 +1,6 @@
 {
   "name": "@mathyasp/string-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JS Library for strings",
   "main": "src/index.js",
   "scripts": {
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
     "jest": "^29.7.0"
   }
 }

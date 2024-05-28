@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const fb = require('../src/index');
 
 test('capitalize will capitalize the first letter of a string', () => {
