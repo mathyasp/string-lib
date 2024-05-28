@@ -1,3 +1,7 @@
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40mathyasp%2Fstring-lib)
+![NPM Version](https://img.shields.io/npm/v/%40mathyasp%2Fstring-lib)
+![Gitea Last Commit](https://img.shields.io/gitea/last-commit/mathyasp/https%3A%2F%2Fgithub.com%2Fmathyasp%2Fstring-lib)
+
 # String-Lib
 
 A JS Library for strings
